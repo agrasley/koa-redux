@@ -48,11 +48,12 @@ The function exported by koa-redux adds a `redux` property to koa's `this` conte
 
 ### handleRender
 
-`handleRender` takes three arguments:
+`handleRender` takes four arguments:
 
 1. `componentFn`—A function which takes a redux store as its argument and returns the root react component.
 2. `reducer`—The root reducer function for the redux application.
 3. `initialState`—The initial state provided to the root reducer. Defaults to `{}` if undefined.
+4. `compArgs`—Additional arguments passed to the `componentFn`
 
 `handleRender` returns an object with two properties:
 
